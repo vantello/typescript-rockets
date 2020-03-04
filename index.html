@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockets</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="StyleSheet" href="css/styles.css" type="text/css" media="screen">
+        <link rel="icon" type="png" sizes="16x16" href="img/favicon-rocket.png">
+
+        <script src="models/rockets.js"></script>
+        <script src="controllers/controllers.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col s12 red lighten-2 header">
+            <h3 class="bebas">ROCKETS</h3>
+            <p class="roboto">Segon exercici de Typescript</p>
+        </div>
+        <div class="col s4">
+            <div class="input-field col s6">
+                <input id="idRocket" type="tel" class="roboto">
+                <label for="color" class="roboto">Rocket id/Name</label>
+            </div>
+            <div class="input-field col s4">
+                <input id="thrustersRocket" type="tel" class="roboto">
+                <label for="color" class="roboto">Nº Thrusters</label>
+            </div>
+            <button id="btnCreateRocket" class="button roboto blue-grey lighten-5" onclick="createRocket()"><i class="material-icons left">build</i>CREATE ROCKET</button>
+            <div id="rocketsCreated" class="roboto"></div>
+        </div>
+        <div id="displayRockets" class="col s8 center dNone">
+            <div class="col s6">
+                <img src="img/rocket1.jpg" class ="center" alt="Rocket 1" width="150" height="150">
+                <table class="centered">
+                    <thead>
+                        <tr>
+                            <th id="showNumRocket1"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="showIdNameRocket1"></td>
+                        </tr>
+                        <tr>
+                            <td id="showNumberThrustersRocket1"></td>
+                        </tr>
+                        <tr>
+                            <td id="showThrustersRocket1"></td>
+                        </tr>
+                        <tr>
+                            <td id="showMaxThrustersRocket1"></td>
+                        </tr>
+                        <tr>
+                            <td id="showSpeedRocket1"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="button roboto col s6 green" onclick="morePower(this.id)" id="rocket1"><i class="material-icons left">add</i>MORE POWER</button>
+                <button class="button roboto col s6 red" onclick="lessPower(this.id)" id="rocket1"><i class="material-icons left">remove</i>LESS POWER</button>
+            </div>
+            <div class="col s6">
+                <img src="img/rocket2.jpg" class ="center" alt="Rocket 2" width="150" height="150">
+                <table class="centered">
+                    <thead>
+                        <tr>
+                            <th id="showNumRocket2"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="showIdNameRocket2"></td>
+                        </tr>
+                        <tr>
+                            <td id="showNumberThrustersRocket2"></td>
+                        </tr>
+                        <tr>
+                            <td id="showThrustersRocket2"></td>
+                        </tr>
+                        <tr>
+                            <td id="showMaxThrustersRocket2"></td>
+                        </tr>
+                        <tr>
+                            <td id="showSpeedRocket2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="button roboto col s6 green" onclick="morePower(this.id)" id="rocket2"><i class="material-icons left">add</i>MORE POWER</button>
+                <button class="button roboto col s6 red" onclick="lessPower(this.id)" id="rocket2"><i class="material-icons left">remove</i>LESS POWER</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

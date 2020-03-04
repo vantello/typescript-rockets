@@ -1,0 +1,35 @@
+body{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+}
+
+.bebas{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.roboto{
+    font-family: 'Roboto Mono', monospace;
+}
+.header{
+    margin-bottom: 10px;
+}
+.header h3{
+    margin-bottom: 0;
+}
+.header p{
+    padding-left: 35px;
+    margin-top: 0;
+}
+.button{
+    border: solid 3px;
+    padding: 15px 95px;
+}
+
+.button:hover{
+    cursor: pointer;
+    color: white;
+}
+.dNone{
+    display: none;
+}
